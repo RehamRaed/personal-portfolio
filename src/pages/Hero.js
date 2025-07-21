@@ -49,7 +49,7 @@ function Hero() {
         </h1>
 
         <p className={`description ${showDescription ? "show" : ""}`}>
-          Hi! I'm Reham, a Front-End Developer with React & Next.js
+          Hi! I'm Reham Magharee , a Front-End Developer with React & Next.js
         </p>
 
        <div className={`buttons ${showButtons ? "show" : ""}`}>
