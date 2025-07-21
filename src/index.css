@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.animated-title {
+  display: inline-block;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  color: white;          /* اللون أبيض */
+  font-weight: 700;      /* عريض */
+  font-size: 3.7rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.animated-title.show {
+  opacity: 1;
+}
+
+.animated-char {
+  display: inline-block;
+  transform: translateX(-30px) scale(0.3);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-name: spreadChars;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  animation-play-state: paused;
+}
+
+.animated-title.show .animated-char {
+  animation-play-state: running;
+}
+
+@keyframes spreadChars {
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.border-gradient-btn {
+  display: inline-flex;
+  text-decoration: none;
+  margin-top: 25px;
+  position: relative;
+  padding: 12px 24px;
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+  min-width: 230px;
+  text-align: center;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.border-gradient-btn:hover {
+  transform: scale(1.03) !important; 
+}
+
+.border-gradient-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  padding: 1.5px ;
+  background: linear-gradient(45deg,#b07bff,#b88bfa, #c49efd, #cdaaff, #5b5b8e, #363660,#222240);
+  background-size: 600% 600%;
+  animation: borderSpin 10s ease-in-out infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+@keyframes borderSpin {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.border-gradient-btn svg {
+  vertical-align: middle; 
+  display: inline-block;
+  margin-left: 10px;
+  height: 27px;
+}
+
+
+
+@media (max-width:400px) {
+  .animated-title {
+  font-size: 3rem;}
+}

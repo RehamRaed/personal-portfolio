@@ -1,0 +1,250 @@
+
+.contact-section {
+  background: rgb(0, 3, 28);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem 7rem 1rem;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 1200px !important;
+  width: 100%;
+}
+
+.contact-para {
+  text-align: start;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+
+.details-box {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+}
+.detail-link {
+  color: #ffffff; 
+  text-decoration: none; 
+  font-weight: 500; 
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.detail-link:hover {
+  color: #b88bfa; 
+  text-decoration: underline; 
+}
+
+.icon-container {
+  background-color: #17172d;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-label {
+  color: #aaa9a97d;
+  font-size: 15px;
+}
+
+.inputs-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.input-wrapper.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 40px 0.75rem 12px; 
+  border-radius: 5px;
+  border: 1px solid #17172d;
+  background-color: #17172d;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: #aaa9a97d;
+  opacity: 1;
+  font-size: 14px;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 5px #607194;
+}
+
+
+.input-wrapper svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: left;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.btn-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.send-button {
+  text-transform: uppercase;
+  padding: 0.75rem;
+  font-weight: 600;
+  background: #b88bfa;
+  min-width: 220px;
+  color: #17172d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.send-button:hover {
+  background: #b380ff;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .s-col {
+    margin-top: 30px !important;
+  }
+  .btn-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 446px) {
+  .contact-para {
+    font-size: 16px;
+  }
+}
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.status-alert {
+  position: relative;
+  width: 350px;
+  background: #c7e7ff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 0.5s ease;
+}
+
+.status-alert.success {
+  border: 1px solid #80c8ff;
+}
+
+.status-alert.error {
+  border: 1px solid #ff8e9a;
+}
+.status-alert.hide {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+
+.status-alert p {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #17172d;
+  font-size: 19px;
+}
+
+.status-alert small {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+/* زر الاغلاق */
+.close-alert-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+}
