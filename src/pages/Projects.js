@@ -26,7 +26,7 @@ const projects = [
     title: "Project One",
     image: project1,
     description:
-      "A modern, responsive restaurant website built with Next.js, React, Tailwind CSS, and Firebase Authentication. It features an attractive interface, fast performance, SEO-optimized pages, and secure login. ",
+      "A dynamic restaurant website built with Next.js, featuring SEO-optimized pages, a sleek UI, and secure user authentication via Firebase. The site offers fast navigation and a visually engaging experience for visitors looking to explore menus and offers.",
     repoLink: "https://github.com/RehamRaed/resturant.git",
     demoLink: "https://onlineresturant.vercel.app/",
     icons: [
@@ -42,7 +42,7 @@ const projects = [
     title: "Project Two",
     image: project2,
     description:
-      "A responsive and stylish movies website built with React.js and JSON data. Users can explore popular, top-rated, and upcoming films through a smooth, modern interface, with user registration and login handled via Firebase Authentication.",
+      "An interactive movie platform created with React.js and JSON data, allowing users to browse trending, top-rated, and upcoming films. It includes a smooth browsing experience with user authentication and personalized content features.",
     repoLink: "https://github.com/RehamRaed/movie-explorer.git",
     demoLink: "https://movie-explorer-iota-jade.vercel.app/",
     icons: [
@@ -57,7 +57,7 @@ const projects = [
     title: "Project Three",
     image: project3,
     description:
-      "A modern, fully responsive e-commerce site built with React.js and Bootstrap. It features category browsing, product filtering, elegant modals for product previews, and a testimonials section — all designed for a smooth user experience on any device.",
+      "A feature-rich e-commerce store for shoes, developed using React.js and Bootstrap. Users can browse by categories, filter products, view quick modals for product previews, and read testimonials, all wrapped in a polished and intuitive interface.",
     repoLink: "https://github.com/RehamRaed/Online_Shoes_Shop.git",
     demoLink: "https://online-shoes-shop.vercel.app/",
     icons: [
@@ -73,7 +73,7 @@ const projects = [
     title: "Project Four",
     image: project4,
     description:
-      "A responsive and modern web application for browsing recipes from various cuisines, built with React.js and Firebase . It features an interactive user experience and adapts seamlessly to all screen sizes ",
+      "A vibrant recipe web application that curates a diverse collection of recipes from different cuisines. Built with React.js and Firebase, it offers seamless exploration of dishes, with an adaptive layout optimized for all devices.",
     repoLink: "https://github.com/RehamRaed/Recipes_Website.git",
     demoLink: "https://your-recipesguide.vercel.app/",
     icons: [
@@ -89,7 +89,7 @@ const projects = [
     title: "Project Five",
     image: project5,
     description:
-      "modern and fully responsive landing page built with React. It showcases a business promotion service with creative strategies and innovative solutions. The design is clean, user-friendly, and adapts ",
+      "A modern landing page designed to promote business services through innovative layouts and creative messaging. Developed in React, the page highlights strategies and solutions with an emphasis on clear calls to action and professional branding.",
     repoLink: "https://github.com/RehamRaed/business-project.git",
     demoLink: "https://business-project-alpha.vercel.app/",
     icons: [
@@ -105,7 +105,7 @@ const projects = [
     title: "Project Six",
     image: project6,
     description:
-      "A landing page for a university that aims to provide students with a smooth digital experience through an attractive and user-friendly interface. The page was developed using React.js with a modular component structure to ensure scalability and maintainability. ",
+      "A dedicated university landing page aimed at enhancing student engagement. Built with React.js, it features an organized component-based structure for easy scalability, and presents academic information through a clean, approachable design.",
     repoLink: "https://github.com/RehamRaed/University_Website.git",
     demoLink: "https://university-sigma-eight.vercel.app/",
     icons: [
